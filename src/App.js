@@ -6,7 +6,7 @@ function App() {
 
   //Function to generate the results randomly
   function rollDice() {
-    return Math.floor(Math.random() * 6) + 1;
+    return Math.floor(Math.random() * 6) + 1;//alternate Math.ceil(Math.random()*6)
   }
 
   function handleRoll() {
@@ -28,7 +28,7 @@ function App() {
         min="1"
         max="12"
         value={numberOfDice}
-        onChange={(e) => setNumberOfDice(Number(e.target.value))}
+        onChange={(e) => setNumberOfDice(Number(e.target.value))} //we can also use onInput
         placeholder="Enter number of dice"
         style={{ width: "200px", padding: "8px" }}
       />
